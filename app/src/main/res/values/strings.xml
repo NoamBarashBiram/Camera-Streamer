@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Camera Streamer</string>
+    <string name="action_settings">Settings</string>
+    <string name="video_header">Video Settings</string>
+    <string name="size_key">frame_size</string>
+    <string name="quality_key">jpegQuality</string>
+    <string name="server_header">Server Settings</string>
+    <string name="server_port_key">serverPort</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="lens_key">lens_facing</string>
+</resources>

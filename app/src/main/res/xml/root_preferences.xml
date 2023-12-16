@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:title="@string/server_header">
+        <EditTextPreference
+            app:defaultValue="0"
+            app:dialogLayout="@layout/int_edittext"
+            app:key="@string/server_port_key"
+            app:title="Set Server Port"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+    <PreferenceCategory app:title="@string/video_header">
+        <ListPreference
+            app:key="@string/lens_key"
+            app:title="Choose camera"
+            app:defaultValue="1"
+            app:entryValues="@array/lenses_values"
+            app:entries="@array/lenses"
+            app:useSimpleSummaryProvider="true" />
+        <ListPreference
+            app:key="@string/size_key"
+            app:title="Set Frame Size"
+            app:useSimpleSummaryProvider="true" />
+        <SeekBarPreference
+            max="100"
+            app:defaultValue="90"
+            app:key="@string/quality_key"
+            app:min="1"
+            app:showSeekBarValue="true"
+            app:summary="Higher quality takes larger bandwidth while lower quality consumes more hardware resources"
+            app:title="Quality" />
+    </PreferenceCategory>
+</PreferenceScreen>
